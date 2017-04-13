@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Volumes/Thornhill/vagrantboxen/Ubuntu-Samaritan","disabled":false}}}
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Volumes/Thornhill/vagrantboxen/Ubuntu-Samaritan","disabled":false,"__vagrantfile":true}}}
