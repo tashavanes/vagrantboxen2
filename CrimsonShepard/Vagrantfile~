@@ -5,6 +5,7 @@
 # configures the configuration version (we support older styles for
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
+
 Vagrant.configure(2) do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
@@ -26,14 +27,16 @@ Vagrant.configure(2) do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
 # this is for Solr/Fusion when it's up - TvE
-config.vm.network "forwarded_port", guest: 8983, host:8983
-config.vm.network "forwarded_port", guest: 8984, host:8984
-config.vm.network "forwarded_port", guest: 8764, host:8764
-config.vm.network "forwarded_port", guest: 8765, host:8765
-config.vm.network "forwarded_port", guest: 8765, host:8766
-config.vm.network "forwarded_port", guest: 8765, host:8769
-config.vm.network "forwarded_port", guest: 8765, host:9983
-# config.vm.network "forwarded_port", guest: 9999, host:9999
+#config.vm.network "forwarded_port", guest: 8983, host:8983
+#config.vm.network "forwarded_port", guest: 8984, host:8984
+#config.vm.network "forwarded_port", guest: 8764, host:8764
+#config.vm.network "forwarded_port", guest: 8765, host:8765
+#config.vm.network "forwarded_port", guest: 8765, host:8766
+#config.vm.network "forwarded_port", guest: 8765, host:8769
+#config.vm.network "forwarded_port", guest: 8765, host:9983
+
+#Meteor/Node servers start here
+config.vm.network "forwarded_port", guest: 3000, host:3000
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -59,7 +62,7 @@ config.vm.network "forwarded_port", guest: 8765, host:9983
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-  #  vb.memory = "2048"
+vb.memory = "4096"
   # end
   #
   # View the documentation for the provider you are using for more
